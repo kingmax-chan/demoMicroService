@@ -16,7 +16,7 @@ import com.epam.example.hrms.service.IEmployeeService;
 public class EmployeeController {
 	@Autowired
 	private IEmployeeService employeeService;
-	
+
 	@GetMapping("/{employeeId}")
 	public Employee findEmployeeById(@PathVariable String employeeId){
 		return employeeService.findEmployee(employeeId);

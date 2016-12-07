@@ -1,22 +1,2 @@
 server:
   port: 8888
-  
-spring:
-  profiles:
-    active: dev
-  
-employees:
-  - employeeId: 0001
-    name: Tom
-    age: 25
-  - employeeId: 0002
-    name: Jerry
-    age: 26
-  - employeeId: 0003
-    name: Susan
-    age: 24
-  
-employee:
-  employeeId: 0001
-  name: Tom
-  age: 25

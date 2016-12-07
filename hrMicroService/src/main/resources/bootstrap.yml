@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: humanResource
+  profiles:
+    active: dev
+  cloud:
+    config:
+      uri: http://localhost:8080
+      username: epam
+      password: Ab123456

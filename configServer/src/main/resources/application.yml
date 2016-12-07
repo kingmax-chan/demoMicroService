@@ -1,0 +1,30 @@
+server:
+  port: 8080
+
+spring:
+  config:
+    name: exampleConfig
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/wuxiaoxin730/cloud
+        health:
+          repositories:
+            hrMS:
+              name: humanResource
+              profiles: dev
+security:
+  user:
+    name: epam
+    password: Ab123456
+encrypt:
+  key-store:
+    location: classpath:/server.jks
+    password: 123456
+    alias: mykey2
+    secret: 123456
+
+
+
+
