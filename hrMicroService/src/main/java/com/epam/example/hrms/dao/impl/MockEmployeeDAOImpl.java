@@ -15,10 +15,13 @@ import com.epam.example.hrms.response.MockEmployeeResponse;
 public class MockEmployeeDAOImpl implements IEmployeeDAO {
 	@Autowired
 	private MockEmployeeResponse employeesResponse;
+	
+	@Autowired
+	private Employee employee;
 
 	@Override
 	public Employee find(String employeeId) {
-		return new Employee();
+		return employee;
 	}
 
 	@Override
