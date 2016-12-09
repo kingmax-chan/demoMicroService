@@ -9,7 +9,7 @@
     <modules>
         <module>configServer</module>
         <module>eurekaServer</module>
-        <module>hrMicroService</module>
+        <module>employeeMicroService</module>
         <module>salaryMicroService</module>
     </modules>
     <packaging>pom</packaging>

@@ -5,6 +5,7 @@ import org.springframework.boot.context.properties.EnableConfigurationProperties
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.context.annotation.Profile;
+import org.springframework.web.client.RestTemplate;
 
 import com.epam.example.hrms.model.Employee;
 import com.epam.example.hrms.response.MockEmployeeResponse;
@@ -24,5 +25,10 @@ public class HRConfiguration {
 	@ConfigurationProperties("employee")
 	public Employee employeeFactory() {
 		return new Employee();
+	}
+	
+	@Bean
+	public RestTemplate getRestTemplate(){
+		return new RestTemplate();
 	}
 }

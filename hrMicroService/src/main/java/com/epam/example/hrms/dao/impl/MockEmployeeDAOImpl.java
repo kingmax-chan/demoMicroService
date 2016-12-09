@@ -21,7 +21,10 @@ public class MockEmployeeDAOImpl implements IEmployeeDAO {
 
 	@Override
 	public Employee find(String employeeId) {
-		return employee;
+		return employeesResponse.getEmployees()
+				.stream()
+				.filter(emp -> emp.getEmployeeId().equals(employeeId)).findFirst()
+				.orElse(employee);
 	}
 
 	@Override
